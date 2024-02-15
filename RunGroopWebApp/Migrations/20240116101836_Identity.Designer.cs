@@ -210,7 +210,7 @@ namespace RunGroopWebApp.Migrations
                     b.Property<DateTimeOffset?>("LockoutEnd")
                         .HasColumnType("datetimeoffset");
 
-                    b.Property<int?>("Mileage")
+                    b.Property<int?>("Milage")
                         .HasColumnType("int");
 
                     b.Property<string>("NormalizedEmail")

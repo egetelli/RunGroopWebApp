@@ -12,8 +12,8 @@
                             <tr class="bg-white">
                                 <th scope="row">
                                     <div class="media align-items-center">
-                                        <img alt="Image profile avatar" src="@user.ProfileImageUrl" class="avatar">
-                                        <div class="media-body">
+@*                                        <img alt="Image profile avatar" src="@user.ProfileImageUrl" class="avatar">
+*@                                        <div class="media-body">
                                             <span class="h6 mb-0">@user.UserName</span>
                                         </div>
                                     </div>
@@ -25,12 +25,12 @@
                                 </td>
 
                                 @{
-                                    var Mileage = user.Mileage == null ? "?" : user.Mileage.ToString();
-                                    var pace = user.Pace == null ? "?" : user.Mileage.ToString();
+                                    var Milage = user.Milage == null ? "?" : user.Milage.ToString();
+                                    var pace = user.Pace == null ? "?" : user.Milage.ToString();
                                 }
-                                <td>@Mileage mile at @pace mph</td>
-                                <td><i class="icon-location"></i> @user.Location</td>
-                            </tr>
+                                <td>@Milage mile at @pace mph</td>
+@*                                <td><i class="icon-location"></i> @user.Location</td>
+*@                            </tr>
                             <tr class="table-divider">
                                 <th></th>
                                 <td></td>

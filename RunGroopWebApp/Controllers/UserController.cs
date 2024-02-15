@@ -24,7 +24,7 @@ namespace RunGroopWebApp.Controllers
                     Id = user.Id,
                     UserName = user.UserName,
                     Pace = user.Pace,
-                    Mileage = user.Mileage
+                    Milage = user.Milage
                 };
                 result.Add(userViewModel);
             }
@@ -39,7 +39,7 @@ namespace RunGroopWebApp.Controllers
                 Id = user.Id,
                 UserName = user.UserName,
                 Pace = user.Pace,
-                Mileage = user.Mileage
+                Milage = user.Milage
             };
             return View(userDetailViewModel);
         }

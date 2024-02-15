@@ -8,7 +8,7 @@ namespace RunGroopWebApp.Models
     {
 
         public int? Pace { get; set; }
-        public int? Mileage { get; set; }
+        public int? Milage { get; set; }
         public string? ProfileImageUrl { get; set; }
         public string? City { get; set; }
         public string? State { get; set; }

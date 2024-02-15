@@ -57,7 +57,7 @@ namespace RunGroopWebApp.Migrations
                     b.Property<int>("AddressId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("Mileage")
+                    b.Property<int?>("Milage")
                         .HasColumnType("int");
 
                     b.Property<int?>("Pace")

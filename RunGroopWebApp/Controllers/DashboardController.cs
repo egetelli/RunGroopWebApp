@@ -40,12 +40,23 @@ namespace RunGroopWebApp.Controllers
             {
                 Id = user.Id,
                 Pace = user.Pace,
-                Mileage = user.Mileage,
+                Milage = user.Milage,
                 ProfileImageUrl = user.ProfileImageUrl,
                 City = user.City,
                 State = user.State
             };
             return View(editUserViewModel);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> EditUserProfile(EditUserDashboardViewModel editVM)
+        {
+            if (!ModelState.IsValid)
+            {
+                ModelState.AddModelError("", "Failed to edit profile");
+                return View("EditUserProfile", editVM);
+            }
+            var user = await _dashboardRepository.GetByIdNoTracking();
         }
     }
 }
